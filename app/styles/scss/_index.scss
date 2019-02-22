@@ -1,0 +1,78 @@
+.explore-pmi {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.card {
+	border: 1px solid $color1;
+	box-shadow: 2px 2px 15px $color3;
+	border-radius: 0.25em;
+}
+
+@media screen and (max-width: 576px) {
+	.card {
+		margin-top: 1em;
+	}
+}
+
+.card-title {
+	font-family: $font4;
+	color: $color1;
+	font-weight: 700;
+}
+
+.card-link {
+	position: absolute;
+	bottom: 0;
+}
+
+.card-link {
+	color: $color1;	
+	padding-bottom: 1em;
+}
+
+.card-link:hover {
+	color: $color2;
+}
+
+.why-pmi {
+	margin-top: 8em;
+}
+
+.why-pmis h2 {
+	color: $color1;
+}
+
+.why-pmi-col-br {
+	border-bottom: 3px solid $color1;
+	border-right: 3px solid $color1;
+	padding: 2em;
+}
+
+.why-pmi-col-bl {
+	border-bottom: 3px solid $color1;
+	padding: 2em;
+}
+
+.why-pmi-col-tr {
+	border-right: 3px solid $color1;
+	padding: 2em;
+}
+
+.why-pmi-col-tl {
+	padding: 2em;
+}
+
+@media screen and (max-width: 768px) {
+	.why-pmi-col-br, .why-pmi-col-bl, .why-pmi-col-tr, .why-pmi-col-tl {
+		border: none;
+	}
+}
+
+.additional {
+	margin-top: 3em;
+}
+
+.contact {
+	margin-top: 3em;
+}

@@ -1,0 +1,25 @@
+.hours-container {
+	margin-top: 3em;
+}
+
+.hours-box {
+	border: 2px solid $color1;
+	padding: 20px;
+	box-shadow: 2px 2px 15px black;
+	border-radius: 1em;
+}
+
+.hours-box:first-child {
+	margin-right: 1em;
+}
+
+@media screen and (max-width: 576px) {
+	.hours-box:first-child {
+		margin-right: auto;
+	}
+}
+
+.hours-title {
+	text-decoration: underline;
+	color: $color1;
+}

@@ -1,0 +1,52 @@
+.nav-contact {
+	background-color: $color5;
+	color: white;
+}
+
+.nav-contact li {
+	margin-right: 0.5em;
+}
+
+@media screen and (max-width: 576px) {
+	.nav-contact {
+		font-size: 0.65em;
+	}
+}
+
+/* Navbar */
+.navbar-expand-lg, .dropdown-menu {
+	background-color: $color1;
+}
+
+.dropdown-menu {
+	border: 1px solid white;
+}
+
+.navbar-nav a, .navbar-brand, .footer-ul a {
+	color: white;
+}
+
+.navbar-nav a:hover, .general-button:hover, .footer-ul a:hover {
+	color: $color2;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+.navbar-brand {
+	font-size: 2em;
+	font-family: $font1;
+	font-weight: 700;
+	text-shadow: 2px 2px 15px $color3;
+}
+
+@media screen and (max-width: 576px) {
+	.navbar-brand {
+		font-size: 1.8em;
+	}
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+	background-color: $color1;
+}

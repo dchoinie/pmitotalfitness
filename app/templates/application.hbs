@@ -1,5 +1,117 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="container-fluid nav-contact">
+	<nav class="navbar">
+		<ul class="nav">
+			<li><small><i class="fas fa-map-marker-alt"></i> 124 S. 2nd St, Waterville, MN 56086</small></li>
+			<li><small><i class="fas fa-phone"></i> 507.362.8469</small></li>
+		</ul>
+		<ul class="nav">
+			<li><i class="fab fa-facebook-f"></i></li>
+			<li><i class="fab fa-twitter"></i></li>
+			<li><i class="fab fa-instagram"></i></li>
+			<li><i class="far fa-envelope"></i></li>
+		</ul>
+	</nav>
+</div>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+	{{#link-to "index" class="navbar-brand"}}PMI Total Fitness{{/link-to}}
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropdownContent">
+		<i class="fas fa-bars" style="color: white;"></i>
+	</button>
+
+	<div class="collapse navbar-collapse justify-content-between" id="navDropdownContent">
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="membership-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Membership
+				</a>
+				<div class="dropdown-menu" aria-labelledby="membership-dropdown">
+					{{#link-to "membership-options" class="dropdown-item"}}Membership Options{{/link-to}}
+					{{#link-to "rates" class="dropdown-item"}}Rates{{/link-to}}
+					{{#link-to "single-day-passes" class="dropdown-item"}}Single Day Passes{{/link-to}}
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="classes-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Classes
+				</a>
+				<div class="dropdown-menu" aria-labelledby="classes-dropdown">
+					<a class="dropdown-item" href="#">Yoga</a>
+					<a class="dropdown-item" href="#">Silver Sneakers</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="services-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Services
+				</a>
+				<div class="dropdown-menu" aria-labelledby="services-dropdown">
+					{{#link-to "tanning" class="dropdown-item"}}Tanning{{/link-to}}
+					<a class="dropdown-item" href="#">Massage</a>
+					<a class="dropdown-item" href="#">Personal Training</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="about-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					About
+				</a>
+				<div class="dropdown-menu" aria-labelledby="about-dropdown">
+					{{#link-to "equipment" class="dropdown-item"}}Equipment{{/link-to}}
+					{{#link-to "hours" class="dropdown-item"}}Hours{{/link-to}}
+					<a class="dropdown-item" href="#">Reimbursment/Incentive Programs</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+		</ul>
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				{{#link-to "login" class="nav-link" id="login-button"}}<i class="far fa-user-circle fa-lg"></i> Member Login{{/link-to}}
+			</li>
+			<li class="nav-item">
+				{{#link-to "shop" class="nav-link"}}<i class="fas fa-shopping-cart"></i> Shop{{/link-to}}
+			</li>
+		</ul>
+	</div>
+</nav>
+<!-- End Navbar -->
 {{outlet}}
+<!-- Footer -->
+<div class="container-fluid" id="footer">
+	<div class="row">
+		<div class="col-xl-10">
+			<div class="footer-items">
+				{{#link-to "membership-options" class="footer-btn"}}<p class="footer-text-sm">Membership Options</p>{{/link-to}}
+				{{#link-to "rates" class="footer-btn"}}<p class="footer-text-sm">Rates</p>{{/link-to}}
+				{{#link-to "single-day-passes" class="footer-btn"}}<p class="footer-text-sm">Single Day Passes</p>{{/link-to}}
+				{{#link-to "yoga" class="footer-btn"}}<p class="footer-text-sm">Yoga</p>{{/link-to}}
+				{{#link-to "silver-sneakers" class="footer-btn"}}<p class="footer-text-sm">Silver Sneakers</p>{{/link-to}}
+				{{#link-to "tanning" class="footer-btn"}}<p class="footer-text-sm">Tanning</p>{{/link-to}}
+				{{#link-to "massage" class="footer-btn"}}<p class="footer-text-sm">Massage</p>{{/link-to}}
+				{{#link-to "personal-training" class="footer-btn"}}<p class="footer-text-sm">Personal Training</p>{{/link-to}}
+				{{#link-to "equipment" class="footer-btn"}}<p class="footer-text-sm">Equipment</p>{{/link-to}}
+				{{#link-to "hours" class="footer-btn"}}<p class="footer-text-sm">Hours</p>{{/link-to}}
+				{{#link-to "reimbursement" class="footer-btn"}}<p class="footer-text-sm">Reimbursement</p>{{/link-to}}<br />
+				{{#link-to "about" class="footer-btn"}}<p class="footer-text-xs">About</p>{{/link-to}}
+				{{#link-to "privacy-policy" class="footer-btn"}}<p class="footer-text-xs">Privacy Policy</p>{{/link-to}}
+				{{#link-to "terms-of-use" class="footer-btn"}}<p class="footer-text-xs">Terms of Use</p>{{/link-to}}
+				{{#link-to "club-policies" class="footer-btn"}}<p class="footer-text-xs">Club Policies</p>{{/link-to}}
+				{{#link-to "accessibility-policy" class="footer-btn"}}<p class="footer-text-xs">Accessibility Policy</p>{{/link-to}}
+				{{#link-to "contact" class="footer-btn"}}<p class="footer-text-xs">Contact</p>{{/link-to}}<br />
+				<p class="footer-text-sm" style="color: #cc1224">&copy; 2019 PMI Total Fitness. All Rights Reserved.</p>
+			</div>
+		</div>
+		<div class="col-xl-2">
+			<div class="footer-items">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="far fa-envelope"></i>
+				<i class="fas fa-map-marker-alt"></i>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Footer -->
+

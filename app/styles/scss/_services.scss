@@ -1,0 +1,33 @@
+/* Tanning */
+#tanning-table .tanning-pre-table {
+	background-color: black;
+	color: white;
+	padding: 0.8em;
+}
+
+#tanning-table .tanning-th {
+	background-color: $color1;
+	color: white;
+}
+
+#tanning-table .tanning-th, td {
+	padding: 0.8em;
+	border: 1px solid #ddd;
+}
+
+#tanning-table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 576px) {
+	#tanning-table .skin-type-description {
+		display: none;
+	}
+	#tanning-table th, #tanning-table td {
+		font-size: 0.7em;
+	}
+}
+
+.sunstarspeed-card {
+	box-shadow: 2px 2px 15px black;
+}
