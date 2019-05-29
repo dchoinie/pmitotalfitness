@@ -1,54 +1,44 @@
 {
-  "name": "pmitotalfitness",
-  "version": "0.0.0",
+  "name": "gatsby-starter-hello-world",
   "private": true,
-  "description": "Small description for pmitotalfitness goes here",
-  "repository": "",
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
   "license": "MIT",
-  "author": "",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
   "scripts": {
-    "build": "ember build",
-    "lint:hbs": "ember-template-lint .",
-    "lint:js": "eslint .",
-    "start": "ember serve",
-    "test": "ember test"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "bootstrap": "^4.3.1",
+    "gatsby": "^2.6.0",
+    "gatsby-image": "^2.1.0",
+    "gatsby-plugin-google-fonts": "^1.0.0",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.1.0",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-source-shopify": "^2.0.32",
+    "gatsby-transformer-sharp": "^2.1.19",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "@ember/jquery": "^0.5.2",
-    "@ember/optional-features": "^0.6.3",
-    "broccoli-asset-rev": "^2.7.0",
-    "ember-ajax": "^3.1.0",
-    "ember-cli": "~3.7.1",
-    "ember-cli-app-version": "^3.2.0",
-    "ember-cli-babel": "^7.1.2",
-    "ember-cli-dependency-checker": "^3.0.0",
-    "ember-cli-eslint": "^4.2.3",
-    "ember-cli-htmlbars": "^3.0.0",
-    "ember-cli-htmlbars-inline-precompile": "^1.0.3",
-    "ember-cli-inject-live-reload": "^1.8.2",
-    "ember-cli-sass": "^10.0.0",
-    "ember-cli-sri": "^2.1.1",
-    "ember-cli-template-lint": "^1.0.0-beta.1",
-    "ember-cli-uglify": "^2.1.0",
-    "ember-data": "~3.7.0",
-    "ember-export-application-global": "^2.0.0",
-    "ember-load-initializers": "^1.1.0",
-    "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-qunit": "^3.4.1",
-    "ember-resolver": "^5.0.1",
-    "ember-simple-auth": "^1.8.1",
-    "ember-source": "~3.7.0",
-    "ember-welcome-page": "^3.2.0",
-    "eslint-plugin-ember": "^5.2.0",
-    "loader.js": "^4.7.0",
-    "qunit-dom": "^0.8.0",
-    "sass": "^1.17.1"
+    "prettier": "^1.17.1"
   },
-  "engines": {
-    "node": "6.* || 8.* || >= 10.*"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

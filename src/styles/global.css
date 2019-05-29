@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* background-image: linear-gradient(rgba(111,67,108,0.1), rgba(111,67,108,0.1)), url('../../public/static/clean_textile.png'); */
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --theme-purple: #3d2e3c;
+}
+
+ol, ul, dl {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.nav-item {
+    padding: 0.25rem;
+}
+
+@media screen and (min-width: 992px) {
+    #navbarBlock #navbarCollapse {
+        display: block !important;
+    }
+}
