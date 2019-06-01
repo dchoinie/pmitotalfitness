@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import './header.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import Container from 'react-bootstrap/Container'
 import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
 import logo from '../../public/static/logo.png'
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa'
@@ -12,7 +13,7 @@ const VerticalUl = styled.ul`
     padding-inline-start: 0;
     @media (min-width: 992px) {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 0.25rem 0;
     }
 `
@@ -73,13 +74,15 @@ export class Header extends Component {
                         <Link to="/"><StyledImage src={logo} fluid /></Link>
                     </div>
                     <div className="flex">
-                        <VerticalUl>
-                            <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Home</Link></Nav.Item><StyledHr />
-                            <Nav.Item><Link to="/membership" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Membership</Link></Nav.Item><StyledHr />
-                            <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Services</Link></Nav.Item><StyledHr />
-                            <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>About</Link></Nav.Item><StyledHr />
-                            <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Contact</Link></Nav.Item><StyledHr />
-                        </VerticalUl>
+                        <Container>
+                            <VerticalUl>
+                                <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Home</Link></Nav.Item><StyledHr />
+                                <Nav.Item><Link to="/membership" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Membership</Link></Nav.Item><StyledHr />
+                                <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Services</Link></Nav.Item><StyledHr />
+                                <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>About</Link></Nav.Item><StyledHr />
+                                <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Contact</Link></Nav.Item><StyledHr />
+                            </VerticalUl>
+                        </Container>
                     </div>
                 </Navbar.Collapse>
             </Navbar>
