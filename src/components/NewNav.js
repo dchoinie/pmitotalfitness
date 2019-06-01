@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import './header.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import logo from '../../public/static/logo.png'
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa'
 
@@ -34,15 +34,7 @@ const StyledHr = styled.hr`
     }
 `
 
-const StyledImage = styled(Image)`
-    max-width: 30%;
-    padding: 1rem 0;
-    @media (max-width: 992px) {
-        max-width: 50%;
-    }
-`
-
-export class Header extends Component {
+export class NewNav extends Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="lg" id="navbarBlock" style={{padding: "0"}}>
@@ -70,12 +62,12 @@ export class Header extends Component {
                         </HorizontalUl>
                     </div>
                     <div style={{display: "flex", justifyContent: "center"}}>
-                        <Link to="/"><StyledImage src={logo} fluid /></Link>
+                        <Link to="/"><img src={logo} alt="logo" style={{padding: "1rem 0"}} /></Link>
                     </div>
                     <div className="flex">
                         <VerticalUl>
                             <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Home</Link></Nav.Item><StyledHr />
-                            <Nav.Item><Link to="/membership" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Membership</Link></Nav.Item><StyledHr />
+                            <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Membership</Link></Nav.Item><StyledHr />
                             <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Services</Link></Nav.Item><StyledHr />
                             <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>About</Link></Nav.Item><StyledHr />
                             <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Contact</Link></Nav.Item><StyledHr />
@@ -87,4 +79,4 @@ export class Header extends Component {
     }
 }
 
-export default Header
+export default NewNav

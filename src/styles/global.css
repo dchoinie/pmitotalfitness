@@ -3,7 +3,6 @@
 }
 
 html, body {
-    /* background-image: linear-gradient(rgba(111,67,108,0.1), rgba(111,67,108,0.1)), url('../../public/static/clean_textile.png'); */
     margin: 0;
     padding: 0;
 }
@@ -13,8 +12,12 @@ html, body {
 }
 
 ol, ul, dl {
-    margin-top: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.navbar-light .navbar-toggler {
+    border: none !important;
 }
 
 .nav-item {

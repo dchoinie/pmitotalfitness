@@ -1,24 +1,25 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import texture from '../../public/static/clean_textile.png'
 import Button from '../components/Buttons'
 
 
 
-const announcementContainer = {
-    width: '50%',
-    height: '450px',
-    backgroundColor: '#fff',
-    margin: 'auto',
-    textAlign: 'center',
-    marginTop: '-175px',
-    borderRadius: '5px',
-    fontFamily: 'Noto Sans, sans-serif',
-    padding: '0.5rem 1rem'
-}
+const AnnouncementContainer = styled.div`
+    width: 50%;
+    background-color: #fff;
+    margin: auto;
+    text-align: center;
+    margin-top: -200px;
+    border-radius: 5px;
+    padding: 0.5rem 3rem;
+    margin-bottom: 3rem;
+    @media (max-width: 992px) {
+        width: 80%;
+    }
+`
 
 const announcementText = {
-    // padding: '1rem'
+    padding: '0.5rem'
 }
 
 const announcementHeader = {
@@ -30,16 +31,17 @@ const announcementHeader = {
 export class homeAnnouncement extends Component {
     render() {
         return (
-            <div style={announcementContainer}>
+            <AnnouncementContainer>
                 <div style={announcementText}>
-                    <h2>Join Today!</h2>
-                    <h2 style={announcementHeader}>50% Off Joining Fees</h2>
-                    <p>Welcome to your very own luxury athletic resort. Life Time is designed with health, fitness, and community at its core, so you can experience what is most important to you.</p>
+                    <h2>Fitness Center Located In</h2>
+                    <h2 style={announcementHeader}>Waterville, MN</h2>
+                    <p>Welcome to your very own luxury athletic resort. PMI is designed with health, fitness, and community at its core, so you can experience what is most important to you.</p>
                     <div>
                         <Button primary>Membership Options</Button>
+                        <Button>Membership Options</Button>
                     </div>
                 </div>
-            </div>
+            </AnnouncementContainer>
         )
     }
 }

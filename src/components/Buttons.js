@@ -13,4 +13,9 @@ export default styled.button`
   margin: 1rem;
   text-transform: uppercase;
   cursor: pointer;
+  &:hover {
+    background-color: ${props => (props.primary ? "#241523" : "#3d2e3c")};
+    color: ${props => (props.primary ? "#fff" : "#fff")};
+    border: ${props => (props.primary ? "2px solid #241523" : "2px solid #3d2e3c")};
+  }
 `
