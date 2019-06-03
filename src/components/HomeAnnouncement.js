@@ -25,7 +25,8 @@ const announcementText = {
 const announcementHeader = {
     fontSize: '3rem',
     textTransform: 'uppercase',
-    fontWeight: '700'
+    fontWeight: '700',
+    wordBreak: "break-all"
 }
 
 export class homeAnnouncement extends Component {
@@ -38,7 +39,6 @@ export class homeAnnouncement extends Component {
                     <p>Welcome to your very own luxury athletic resort. PMI is designed with health, fitness, and community at its core, so you can experience what is most important to you.</p>
                     <div>
                         <Button primary>Membership Options</Button>
-                        <Button>Membership Options</Button>
                     </div>
                 </div>
             </AnnouncementContainer>

@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import HomeAnnouncement from '../components/HomeAnnouncement'
 import ContentSection1 from '../components/ContentSection1'
+import PageFooter from '../components/PageFooter'
 
 
 export class index extends Component {
@@ -14,6 +15,7 @@ export class index extends Component {
                 <Hero />
                 <HomeAnnouncement />
                 <ContentSection1 />
+                <PageFooter />
             </Layout>
         )
     }

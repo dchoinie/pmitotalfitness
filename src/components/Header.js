@@ -75,7 +75,7 @@ export class Header extends Component {
                     </div>
                     <div className="flex">
                         <Container>
-                            <VerticalUl>
+                            <VerticalUl className="text-uppercase">
                                 <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Home</Link></Nav.Item><StyledHr />
                                 <Nav.Item><Link to="/membership" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Membership</Link></Nav.Item><StyledHr />
                                 <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Services</Link></Nav.Item><StyledHr />
