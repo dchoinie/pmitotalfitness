@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import './header.module.css'
+import './Header.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Container from 'react-bootstrap/Container'
 import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
