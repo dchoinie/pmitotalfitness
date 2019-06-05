@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import heroImg from '../../public/static/gym1.jpg'
+import heroImg from '../images/gym1.jpg'
 
 const Hero = styled.div`
     background-image: url(${heroImg});

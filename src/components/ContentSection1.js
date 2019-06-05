@@ -5,10 +5,10 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-import freeWeights from '../../public/static/free-weights.jpg'
-import groupClasses from '../../public/static/group-classes.jpg'
-import treadmill from '../../public/static/treadmill.jpg'
-import weightMachines from '../../public/static/weight-machines.jpg'
+import freeWeights from '../images/free-weights.jpg'
+import groupClasses from '../images/group-classes.jpg'
+import treadmill from '../images/treadmill.jpg'
+import weightMachines from '../images/weight-machines.jpg'
 
 const oneHundredHeight = {
     height: "100%"

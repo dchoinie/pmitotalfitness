@@ -5,7 +5,7 @@ import './header.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Container from 'react-bootstrap/Container'
 import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
-import logo from '../../public/static/logo.png'
+import logo from '../images/logo.png'
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa'
 
 const VerticalUl = styled.ul`
