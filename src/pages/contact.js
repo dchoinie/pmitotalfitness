@@ -15,7 +15,7 @@ export class contact extends Component {
                     <h2 className="text-center mt-3">Contact</h2>
                     <Form 
                         name="contact" 
-                        data-netlify="true" 
+                        data-netlify="true"
                         action="POST"
                     >
                         <Form.Group controlId="formGroupName">
