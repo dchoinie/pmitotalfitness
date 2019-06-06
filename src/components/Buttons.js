@@ -10,7 +10,6 @@ export default styled.button`
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
-  margin: 1rem;
   text-transform: uppercase;
   cursor: pointer;
   &:hover {

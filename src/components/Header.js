@@ -80,7 +80,7 @@ export class Header extends Component {
                                 <Nav.Item><Link to="/membership" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Membership</Link></Nav.Item><StyledHr />
                                 <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Services</Link></Nav.Item><StyledHr />
                                 <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>About</Link></Nav.Item><StyledHr />
-                                <Nav.Item><Link to="/" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Contact</Link></Nav.Item><StyledHr />
+                                <Nav.Item><Link to="/contact" style={{color: "var(--theme-purple)", fontWeight: "700"}}>Contact</Link></Nav.Item><StyledHr />
                             </VerticalUl>
                         </Container>
                     </div>
