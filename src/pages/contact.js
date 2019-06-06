@@ -13,7 +13,7 @@ export class contact extends Component {
                 <Header />
                 <Container>
                     <h2 className="text-center mt-3">Contact</h2>
-                    <Form name="contact" method="POST" data-netlify="true">
+                    <Form name="contact" method="POST" data-netlify="true" action="/success">
                         <Form.Group controlId="formGroupName">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" placeholder="Name" />
