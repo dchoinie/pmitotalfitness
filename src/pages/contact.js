@@ -13,10 +13,10 @@ export class contact extends Component {
                 <Header />
                 <Container>
                     <h2 className="text-center mt-3">Contact</h2>
-                    <Form 
+                    <form 
                         name="contact" 
                         data-netlify="true"
-                        action="POST"
+                        method="POST"
                     >
                         <Form.Group controlId="formGroupName">
                             <Form.Label>Name</Form.Label>
@@ -35,7 +35,7 @@ export class contact extends Component {
                             <textarea className="form-control">Message</textarea>
                         </Form.Group>
                         <Button primary type="submit">Submit</Button>
-                    </Form>
+                    </form>
                 </Container>
             </Layout>
         )
