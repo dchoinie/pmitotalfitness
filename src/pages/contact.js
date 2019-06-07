@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Container from 'react-bootstrap/Container'
 import Header from '../components/Header'
@@ -9,14 +10,20 @@ import Button from '../components/Buttons'
 export class contact extends Component {
     render() {
         return (
-            <Layout>
+            <div>
+                <Helmet>
+                    <title>Contact</title>
+                    <meta name="description" content="Contact" />
+                </Helmet>
                 <Header />
+                <div style={{backgroundImage: "linear-gradient(to top right, var(--theme-purple), white)"}}>
                 <Container>
                     <h2 className="text-center mt-3">Contact</h2>
-                    <form 
+                    <Form 
                         name="contact" 
                         data-netlify="true"
                         method="POST"
+                        action="/success"
                     >
                         <Form.Group controlId="formGroupName">
                             <Form.Label>Name</Form.Label>
@@ -34,10 +41,12 @@ export class contact extends Component {
                             <Form.Label>Message</Form.Label>
                             <textarea className="form-control">Message</textarea>
                         </Form.Group>
+                        <div data-netlify-recaptcha="true"></div>
                         <Button primary type="submit">Submit</Button>
-                    </form>
+                    </Form>
                 </Container>
-            </Layout>
+                </div>
+            </div>
         )
     }
 }
