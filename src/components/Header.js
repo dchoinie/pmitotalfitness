@@ -71,7 +71,7 @@ export class Header extends Component {
                         </HorizontalUl>
                     </div>
                     <div style={{display: "flex", justifyContent: "center"}}>
-                        <Link to="/"><StyledImage src={logo} fluid /></Link>
+                        <Link to="/"><StyledImage src={logo} fluid alt="logo" /></Link>
                     </div>
                     <div className="flex">
                         <Container>
