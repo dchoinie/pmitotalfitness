@@ -67,10 +67,10 @@ export class index extends Component {
                     </TextDiv>
                     <SocialsDiv className="my-3">
                         <StyledUl>
-                            <StyledLi><FaFacebookSquare size="1.5em" /></StyledLi>
-                            <StyledLi><FaTwitter size="1.5em" /></StyledLi>
+                            <StyledLi><a href="https://www.facebook.com/pmitotalfitness/" style={{color: 'white'}} target="_blank"><FaFacebookSquare size="1.5em" /></a></StyledLi>
+                            <StyledLi><a href="https://twitter.com/PMITotalFitness" style={{color: 'white'}} target="_blank"><FaTwitter size="1.5em" /></a></StyledLi>
                             <StyledLi><FaInstagram size="1.5em" /></StyledLi>
-                            <StyledLi><FaEnvelope size="1.5em" /></StyledLi>
+                            <StyledLi><a href="mailto:pmi.totalfitness@hotmail.com" style={{color: 'white'}}><FaEnvelope size="1.5em" /></a></StyledLi>
                         </StyledUl>
                     </SocialsDiv>
                     <p className="fixed-bottom">© 2019 | PMI Total Fitness</p>
