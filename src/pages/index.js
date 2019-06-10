@@ -60,6 +60,9 @@ export class index extends Component {
     render() {
         return (
             <PurpleBackground>
+                <Helmet>
+                    <title>PMI Total Fitness</title>
+                </Helmet>
                 <PageDiv>
                     <TextDiv>
                         <h4>Coming Soon!</h4>
