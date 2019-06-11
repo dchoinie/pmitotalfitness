@@ -76,11 +76,6 @@ export class index extends Component {
                             <StyledLi><a href="mailto:pmi.totalfitness@hotmail.com" style={{color: 'white'}}><FaEnvelope size="1.5em" /></a></StyledLi>
                         </StyledUl>
                     </SocialsDiv>
-                    <form name="comingSoon" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-                        <label>Name: <input type="text" name="name" /></label>
-                        <label>Email: <input type="email" name="email" /></label>
-                        <button type="submit">Send</button>
-                    </form>
                     <p className="fixed-bottom">© 2019 | PMI Total Fitness</p>
                 </PageDiv>
             </PurpleBackground>
