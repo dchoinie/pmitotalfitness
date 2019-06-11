@@ -20,9 +20,10 @@ export class contact extends Component {
                 <Container>
                     <h2 className="text-center mt-3">Contact</h2>
                     <Form 
-                        name="contact" 
+                        name="contact-form" 
                         data-netlify="true"
                         method="POST"
+                        netlify-honeypot="bot-field"
                         action="/success"
                     >
                         <Form.Group controlId="formGroupName">
